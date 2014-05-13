@@ -21,6 +21,8 @@ class AdminerJsonPreview
 
 	/**
 	 * @param int Max. level in recursion. 0 means no limit.
+	 * @param bool Whether apply JSON preview in selection table.
+	 * @param bool Whether apply JSON preview in edit form.
 	 */
 	function AdminerJsonPreview($maxLevel = 0, $inTable = TRUE, $inEdit = TRUE)
 	{
