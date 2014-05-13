@@ -9,7 +9,7 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
 Displays JSON data preview as a table.
 
-<img src="http://pematon.github.io/screenshots/json-table.png" width="400px" />
+<img src="http://pematon.github.io/screenshots/json-preview.png" width="728px" />
 
 ## How to use
 
