@@ -3,13 +3,22 @@ Plugins for Adminer
 
 Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
-## Plugins
+- [AdminerJsonPreview](https://github.com/pematon/adminer-plugins#adminerjsonpreview)
+- [AdminerSimpleMenu](https://github.com/pematon/adminer-plugins#adminersimplemenu)
+- [How to use](https://github.com/pematon/adminer-plugins#howtouse)
 
-### AdminerJsonPreview
+You can also try our custom Adminer configuration in **all-in-one bundle**: [github.com/pematon/adminer-custom](https://github.com/pematon/adminer-custom)
+
+## AdminerJsonPreview
 
 Displays JSON data preview as a table.
 
 <img src="http://pematon.github.io/screenshots/json-preview.png" width="728px" />
+
+## AdminerSimpleMenu
+
+Displays only one prefered action in table list.
+Get rid of schizophrenic decisions between selecting data and showing table structure. Optimize your workflow!
 
 ## How to use
 
@@ -61,6 +70,3 @@ Final file structure will be:
 - adminer.php
 - index.php
 ```
-
-## All-in-one
-You can try our custom configuration in all-in-one bundle: [github.com/pematon/adminer-custom](https://github.com/pematon/adminer-custom)
