@@ -5,13 +5,13 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
 - [AdminerJsonPreview](https://github.com/pematon/adminer-plugins#adminerjsonpreview)
 - [AdminerSimpleMenu](https://github.com/pematon/adminer-plugins#adminersimplemenu)
-- [How to use](https://github.com/pematon/adminer-plugins#howtouse)
+- [How to use](https://github.com/pematon/adminer-plugins#how-to-use)
 
 You can also try our custom Adminer configuration in **all-in-one bundle**: [github.com/pematon/adminer-custom](https://github.com/pematon/adminer-custom)
 
 ## AdminerJsonPreview
 
-Displays JSON data preview as a table.
+Displays JSON data as a table.
 
 <img src="http://pematon.github.io/screenshots/json-preview.png" width="728px" />
 
