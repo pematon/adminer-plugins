@@ -7,7 +7,7 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 - [AdminerSimpleMenu](https://github.com/pematon/adminer-plugins#adminersimplemenu)
 - [How to use](https://github.com/pematon/adminer-plugins#how-to-use)
 
-You can also try our custom Adminer configuration in **all-in-one bundle**: [github.com/pematon/adminer-custom](https://github.com/pematon/adminer-custom)
+You can also try our [**touch-friendly theme**](https://github.com/pematon/adminer-theme) or our custom Adminer configuration in [**all-in-one bundle**](https://github.com/pematon/adminer-custom).
 
 ## AdminerJsonPreview
 
