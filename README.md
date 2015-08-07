@@ -5,6 +5,7 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
 - [AdminerJsonPreview](https://github.com/pematon/adminer-plugins#adminerjsonpreview)
 - [AdminerSimpleMenu](https://github.com/pematon/adminer-plugins#adminersimplemenu)
+- [AdminerCollations](https://github.com/pematon/adminer-plugins#adminercollations)
 - [How to use](https://github.com/pematon/adminer-plugins#how-to-use)
 
 You can also try our [**touch-friendly theme**](https://github.com/pematon/adminer-theme) or our custom Adminer configuration in [**all-in-one bundle**](https://github.com/pematon/adminer-custom).
@@ -19,6 +20,12 @@ Displays JSON data as a table.
 
 Displays only one prefered action in table list.
 Get rid of schizophrenic decisions between selecting data and showing table structure. Optimize your workflow!
+
+## AdminerCollations
+
+Allows to set custom character sets in collation select boxes. No more scrolling through 197 options to find utf8mb4_general_ci!
+
+<img src="http://pematon.github.io/screenshots/adminer-collations.png" width="186px" />
 
 ## How to use
 
