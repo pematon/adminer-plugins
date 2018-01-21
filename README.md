@@ -3,12 +3,17 @@ Plugins for Adminer
 
 Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
+- [AdminerLoginServers](https://github.com/pematon/adminer-plugins#adminerloginservers)
 - [AdminerJsonPreview](https://github.com/pematon/adminer-plugins#adminerjsonpreview)
 - [AdminerSimpleMenu](https://github.com/pematon/adminer-plugins#adminersimplemenu)
 - [AdminerCollations](https://github.com/pematon/adminer-plugins#adminercollations)
 - [How to use](https://github.com/pematon/adminer-plugins#how-to-use)
 
 You can also try our [**touch-friendly theme**](https://github.com/pematon/adminer-theme) or our custom Adminer configuration in [**all-in-one bundle**](https://github.com/pematon/adminer-custom).
+
+## AdminerLoginServers
+
+Displays constant list of servers in login form. Configuration is similar to the original "login-servers" plugin but – the killer feature – each server can have a different driver!
 
 ## AdminerJsonPreview
 
@@ -56,10 +61,10 @@ File structure will be:
 			include_once "./$filename";
 		}
 
-		$plugins = array(
+		$plugins = [
 			// specify enabled plugins here
-			new AdminerTheme(),
-		);
+			new AdminerSimpleMenu(),
+		];
 
 		return new AdminerPlugin($plugins);
 	}
