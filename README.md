@@ -11,6 +11,9 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 
 You can also try our [**touch-friendly theme**](https://github.com/pematon/adminer-theme) or our custom Adminer configuration in [**all-in-one bundle**](https://github.com/pematon/adminer-custom).
 
+## Compatibility
+Minimal requirements are: PHP 5.4, Adminer 4.4.0.
+
 ## AdminerLoginServers
 
 Displays constant list of servers in login form. Configuration is similar to the original "login-servers" plugin but – the killer feature – each server can have a different driver!
