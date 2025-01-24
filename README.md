@@ -1,7 +1,7 @@
 Plugins for Adminer
 ===================
 
-Usefull plugins for Adminer database tool (http://www.adminer.org/).
+Usefull plugins for **Adminer database tool**.
 
 - [AdminerLoginServers](https://github.com/pematon/adminer-plugins#adminerloginservers)
 - [AdminerJsonPreview](https://github.com/pematon/adminer-plugins#adminerjsonpreview)
@@ -9,10 +9,13 @@ Usefull plugins for Adminer database tool (http://www.adminer.org/).
 - [AdminerCollations](https://github.com/pematon/adminer-plugins#adminercollations)
 - [How to use](https://github.com/pematon/adminer-plugins#how-to-use)
 
-You can also try our [**touch-friendly theme**](https://github.com/pematon/adminer-theme) or our custom Adminer configuration in [**all-in-one bundle**](https://github.com/pematon/adminer-custom).
+## End of life 
+
+This project is almost at the end of its life. We switched to 👉 [our own Adminer fork](https://github.com/pematon/adminer) 👈 some time ago and now we are moving forward to version 5. This will include a new theme and configuration that will replace [adminer-theme](https://github.com/pematon/adminer-theme) and all plugins in [adminer-plugins](https://github.com/pematon/adminer-plugins).
 
 ## Compatibility
-Minimal requirements are: PHP 5.4, Adminer 4.4.0.
+
+Minimal requirements are: PHP 5.6, Adminer 4.4.
 
 ## AdminerLoginServers
 
