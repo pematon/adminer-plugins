@@ -1,4 +1,4 @@
-<?php
+<?php namespace Adminer;
 
 /**
  * Displays JSON preview as a table.
@@ -53,12 +53,12 @@ class AdminerJsonPreview
                 border-collapse: collapse;
                 border-spacing: 0;
                 margin: 4px 0;
-                border: 1px solid #999;
+                border: 1px solid var(--table-border);
                 font-size: 110%;
             }
 
             .json tr {
-                border-bottom: 1px solid #999;
+                border-bottom: 1px solid var(--table-border);
             }
 
             .json tr:last-child {
@@ -69,10 +69,21 @@ class AdminerJsonPreview
                 background: transparent;
             }
 
+            a.json-icon {
+                text-indent: 0 !important;
+                margin-top: -10px;
+            }
+
+            .json {
+                border-color: var(--code-bg) !important;
+                border-left: 7px solid  var(--code-bg) !important;
+                margin: 5px 0 3px 0 !important;
+            }
+
             .json th {
                 padding: 0;
                 width: 1px;
-                border-right: 1px solid #999;
+                border-right: 1px solid var(--table-border);
                 border-bottom: none;
             }
 
@@ -81,12 +92,14 @@ class AdminerJsonPreview
                 border: 0;
             }
 
-            .json code {
+            .json code, json span {
                 display: block;
-                background: transparent;
+                font-size: 12px !important;
                 padding: 2px 3px;
                 white-space: normal;
+                border: 0;
             }
+
 
             .json .json {
                 width: 100%;
@@ -99,10 +112,7 @@ class AdminerJsonPreview
                 display: inline-block;
                 padding: 0;
                 overflow: hidden;
-                background-image: url("<?php echo ME; ?>file=down.gif");
-                background-position: center center;
-                background-repeat: no-repeat;
-                text-indent: -50px;
+                text-indent: 0;
                 vertical-align: middle;
             }
 
@@ -116,10 +126,6 @@ class AdminerJsonPreview
             a.json-link span {
                 color: #fff;
                 padding: 0 5px;
-            }
-
-            a.json-icon.json-up {
-                background-image: url("<?php echo ME; ?>file=up.gif");
             }
 
             /* No javascript support */
@@ -156,10 +162,10 @@ class AdminerJsonPreview
                     if (!obj) return;
 
                     if (obj.style.display === "none") {
-                        button.className += " json-up";
+                        button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 10l5 5 5-5z"/></svg>';
                         obj.style.display = "";
                     } else {
-                        button.className = button.className.replace(" json-up", "");
+                        button.innerHTML= '<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 17l5-5-5-5v10z"/><path d="M0 24V0h24v24H0z" fill="none"/></svg>';
                         obj.style.display = "none";
                     }
                 }
@@ -178,7 +184,7 @@ class AdminerJsonPreview
         }
 
         if ($this->isJson($field, $original) && ($json = json_decode($original, true)) !== null) {
-            $val = "<a class='icon json-icon' href='#' title='JSON' data-index='$counter'>JSON</a> " . $val;
+            $val = "<a class='icon json-icon' href='#' title='JSON' data-index='$counter'><svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M10 17l5-5-5-5v10z'/><path d='M0 24V0h24v24H0z' fill='none'/></svg></a> " . $val;
             if (is_array($json)) {
                 $val .= $this->convertJson($json, 1, $counter++);
             }
@@ -194,7 +200,7 @@ class AdminerJsonPreview
         }
 
         if ($this->isJson($field, $value) && ($json = json_decode($value, true)) !== null && is_array($json)) {
-            echo "<a class='icon json-icon json-link' href='#' title='JSON' data-index='$counter'><span>JSON</span></a><br/>";
+            echo "<a class='icon json-icon json-link' href='#' title='JSON' data-index='$counter'>".icon("toggle-right")."</a><br/>";
             echo $this->convertJson($json, 1, $counter);
         }
     }
@@ -247,7 +253,7 @@ class AdminerJsonPreview
         }
 
         if (empty($json)) {
-            $value .= "<tr><td>   </td></tr>";
+            $value .= "<tr><td>   </td></tr>";
         }
 
         $value .= "</table>";
