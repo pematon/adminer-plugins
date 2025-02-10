@@ -71,11 +71,12 @@ class AdminerJsonPreview
 
             a.json-icon {
                 text-indent: 0 !important;
-                margin-top: -10px;
+                margin: -10px 0 0 -10px;
             }
 
             .json {
                 border-color: var(--code-bg) !important;
+                background: var(--code-bg) !important;
                 border-left: 7px solid  var(--code-bg) !important;
                 margin: 5px 0 3px 0 !important;
             }
@@ -118,7 +119,6 @@ class AdminerJsonPreview
 
             a.json-link {
                 width: auto;
-                padding-left: 18px;
                 background-position: left center;
                 text-indent: 0;
             }
@@ -200,7 +200,7 @@ class AdminerJsonPreview
         }
 
         if ($this->isJson($field, $value) && ($json = json_decode($value, true)) !== null && is_array($json)) {
-            echo "<a class='icon json-icon json-link' href='#' title='JSON' data-index='$counter'>".icon("toggle-right")."</a><br/>";
+            echo "<a class='icon json-icon json-link' href='#' title='JSON' data-index='$counter'><svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 0 24 24' width='24'><path d='M10 17l5-5-5-5v10z'/><path d='M0 24V0h24v24H0z' fill='none'/></svg></a><br/>";
             echo $this->convertJson($json, 1, $counter);
         }
     }
