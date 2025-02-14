@@ -175,8 +175,13 @@ class AdminerJsonPreview
         <?php
     }
 
-    public function selectVal(&$val, $link, array $field, $original)
+    public function selectVal(&$val, $link, ?array $field, $original)
     {
+
+        if (!$field) {
+			return;
+		}
+
         static $counter = 1;
 
         if (!$this->inTable) {
